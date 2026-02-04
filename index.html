@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Caribeairea: Análisis técnico especializado en la ingeniería de motores de alto rendimiento y sostenibilidad.">
+    <meta name="robots" content="index, follow">
+    <title>Caribeairea | Engineering & Automotive Intelligence</title>
+    <style>
+        :root {
+            --primary-dark: #001219;
+            --carnaval-red: #9B2226; /* Rojo Congo Profundo */
+            --carnaval-gold: #EE9B00; /* Oro Cumbia */
+            --carnaval-emerald: #005F73; /* Verde Palma */
+            --text-main: #333333;
+            --text-light: #F8F9FA;
+            --border-color: #E9ECEF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: var(--text-main);
+            background-color: #FFFFFF;
+            line-height: 1.8;
+        }
+
+        /* Tipografía Cursiva Profesional para contenido */
+        p, .technical-spec, blockquote {
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        h1, h2, h3, .nav-link {
+            font-style: normal;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Header Ejecutivo */
+        header {
+            background: var(--primary-dark);
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--carnaval-red);
+        }
+
+        .brand {
+            color: var(--text-light);
+            font-size: 1.4rem;
+            border-left: 5px solid var(--carnaval-gold);
+            padding-left: 15px;
+        }
+
+        /* Hero Sophistication */
+        .hero {
+            padding: 100px 8%;
+            background: linear-gradient(135deg, #001219 0%, #005F73 100%);
+            color: white;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            color: var(--carnaval-gold);
+        }
+
+        /* Grid de Contenido - Diseño No Genérico */
+        .main-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 20px;
+            padding: 80px 8%;
+            background: #fbfbfb;
+        }
+
+        .content-box {
+            background: white;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .content-box:hover {
+            border-color: var(--carnaval-gold);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .box-large { grid-column: span 8; }
+        .box-small { grid-column: span 4; }
+        .box-full { grid-column: span 12; }
+
+        .accent-line {
+            width: 50px;
+            height: 3px;
+            background: var(--carnaval-red);
+            margin-bottom: 20px;
+        }
+
+        /* Especificaciones Técnicas */
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .spec-item {
+            border: 1px solid #eee;
+            padding: 15px;
+            background: #fafafa;
+        }
+
+        /* Botones Profesionales */
+        .btn-primary {
+            background: var(--carnaval-red);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9rem;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #660708;
+            letter-spacing: 3px;
+        }
+
+        /* Sección Legal / Política de Privacidad */
+        .legal-section {
+            background: #F1F3F5;
+            padding: 60px 8%;
+            font-size: 0.85rem;
+            border-top: 1px solid #ddd;
+        }
+
+        .legal-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        footer {
+            background: var(--primary-dark);
+            color: white;
+            padding: 40px 8%;
+            text-align: center;
+        }
+
+        @media (max-width: 992px) {
+            .hero { grid-template-columns: 1fr; text-align: center; }
+            .box-large, .box-small { grid-column: span 12; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="brand">CARIBEAIREA <small style="font-size: 0.6rem; display: block; letter-spacing: 1px;">MECHANICAL INTELLIGENCE</small></div>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h1>Vanguardia en Sistemas de Propulsión</h1>
+        <p>Analizamos la transición energética desde el rigor de la ingeniería mecánica. Del pistón forjado a la celda de hidrógeno.</p>
+        <a href="#articulos" class="btn-primary" style="margin-top: 30px;">Ver Reportes Técnicos</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1616788478583-0e3186835002?auto=format&fit=crop&q=80&w=800" alt="Ingeniería Automotriz" style="width:100%; border-radius: 2px; box-shadow: 20px 20px 0px var(--carnaval-gold);">
+    </div>
+</section>
+
+<main class="main-grid" id="articulos">
+    
+    <div class="content-box box-large">
+        <div class="accent-line"></div>
+        <h2>01. Motores de Combustión Sostenible</h2>
+        <p>La investigación actual en combustibles sintéticos (e-fuels) ha revitalizado el ciclo Otto. Los nuevos bloques de aleación de magnesio y aluminio permiten reducir el peso del motor en un 15%, mejorando la relación peso-potencia sin comprometer la integridad térmica en condiciones de alta presión.</p>
+        <div class="spec-grid">
+            <div class="spec-item"><strong>Eficiencia Térmica:</strong> 42%</div>
+            <div class="spec-item"><strong>Material:</strong> Magnesio-Aluminio</div>
+        </div>
+    </div>
+
+    <div class="content-box box-small" style="background: var(--carnaval-emerald); color: white;">
+        <h3>Dato Técnico</h3>
+        <p>Los sistemas de inyección directa a 350 bares de presión están permitiendo una atomización del combustible que reduce las emisiones de partículas sólidas en un 30% antes de llegar al catalizador.</p>
+    </div>
+
+    <div class="content-box box-small">
+        <img src="https://images.unsplash.com/photo-1502743780242-f10d2ce370f3?auto=format&fit=crop&q=80&w=400" alt="Componente motor" style="width: 100%; margin-bottom: 20px;">
+        <h3>Turbocompresión Eléctrica</h3>
+        <p>El uso de motores eléctricos integrados en el eje del turbo elimina el 'lag' de forma definitiva.</p>
+    </div>
+
+    <div class="content-box box-large">
+        <div class="accent-line" style="background: var(--carnaval-gold);"></div>
+        <h2>02. Arquitecturas de Flujo Axial en Motores EV</h2>
+        <p>A diferencia de los motores radiales convencionales, el flujo axial ofrece un diseño de "panqueque" mucho más compacto. Esta tecnología, heredada de la aviación, permite integrar motores potentes directamente en los cubos de las ruedas, redefiniendo el centro de gravedad del vehículo.</p>
+    </div>
+
+</main>
+
+<section class="legal-section">
+    <div class="legal-container">
+        <h2 style="font-size: 1.2rem; margin-bottom: 20px;">Política de Privacidad y Cumplimiento</h2>
+        <p>De acuerdo con las políticas de transparencia de Google Ads y las normativas internacionales de protección de datos (GDPR/LFPDPPP):</p>
+        <br>
+        <p><strong>Recopilación de Datos:</strong> Caribeairea no recopila información de identificación personal (PII) sin el consentimiento explícito del usuario a través de nuestros formularios de contacto.</p>
+        <br>
+        <p><strong>Uso de Cookies:</strong> Este sitio utiliza cookies técnicas esenciales para la navegación y cookies de análisis de terceros para medir el rendimiento de nuestros artículos técnicos. Los datos son anonimizados antes de su procesamiento.</p>
+        <br>
+        <p><strong>Derechos del Usuario:</strong> Usted tiene derecho a acceder, rectificar o eliminar cualquier dato que haya proporcionado. Para consultas legales, puede contactar a nuestro departamento de cumplimiento en: <strong>legal@caribeairea.com</strong></p>
+        <br>
+        <p><strong>Finalidad Informativa:</strong> El contenido de este blog es exclusivamente informativo. Caribeairea no comercializa componentes automotrices directamente.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 CARIBEAIREA MECHANICAL INTELLIGENCE | BARRANQUILLA, COLOMBIA</p>
+    <p style="font-size: 0.7rem; color: #666; margin-top: 10px;">Diseñado bajo estándares de ingeniería y cumplimiento publicitario digital.</p>
+</footer>
+
+<script>
+    // Smooth scroll para navegación profesional
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Efecto de aparición al hacer scroll
+    const boxes = document.querySelectorAll('.content-box');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    boxes.forEach(box => {
+        box.style.opacity = '0';
+        box.style.transform = 'translateY(30px)';
+        observer.observe(box);
+    });
+</script>
+
+</body>
+</html>
